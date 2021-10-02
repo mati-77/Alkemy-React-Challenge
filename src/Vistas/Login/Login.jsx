@@ -1,11 +1,13 @@
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 
+import './login.css';
+
 export default function Login({ login }) {
 
     return(
-        <div className="min-vh-100 d-flex flex-column justify-content-center align-items-center me-lg-5 ms-lg-5 ps-lg-5 pe-lg-5">
-            <h1>Alkemy React Challenge</h1>
+        <div className="min-vh-100 d-flex flex-column justify-content-center align-items-center formulario">
+            <h1 className="text-center">Alkemy React Challenge</h1>
             <Formik
                 initialValues={{
                     correo: '',
@@ -35,7 +37,7 @@ export default function Login({ login }) {
 
             >
                 {( {errors} ) => (
-                    <Form className="p-4 d-flex flex-column justify-content-center w-100 ps-lg-5 pe-lg-5">
+                    <Form className="p-4 d-flex flex-column justify-content-center w-100">
                         <div className="mb-4">
                             <label htmlFor="correo" className="form-label">Email</label>
                             <Field 

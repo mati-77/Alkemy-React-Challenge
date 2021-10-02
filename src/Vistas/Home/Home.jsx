@@ -1,7 +1,15 @@
 import React from 'react';
 
+import Heroes from './Heroes'
+
 export default function Home() {
+
     return(
-        <h1>soy el Home</h1>
+        <div>
+            <div className="container">
+                <Heroes />
+            </div>
+        </div>
+        
     )
 }
